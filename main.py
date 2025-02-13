@@ -1,8 +1,9 @@
 
 import random
 
-
 #nevermind this is a cooking thing now
+
+
 baked_things = 0
 baking_stuff = ["crepe", "bread", "pie", "pancakes", "croissant", "icecream cake", "cake"]
 flav = ["chocolate", "vanilla", "strawberry", "mint", "caramel"]
@@ -120,7 +121,9 @@ elif (flavour == "caramel") and (ingredient == "water"):
 
 print("you have baked", baked_things, " thing, are you proud of yourself?")
 
-import random
+random_number = random.randint(1, 100)
+print("random number of things to make:", random_number)
 
-baking_stuff = random.randint(0,7)
-print(random recipie to make:", baking_stuff)
+with open("bakedstuff.txt", "r") as file:
+    content = file.read()
+    print(content)
